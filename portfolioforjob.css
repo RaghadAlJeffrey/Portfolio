@@ -11,6 +11,19 @@ body {
   color: #333;
 
 }
+@media (max-width: 768px) {
+  .bd-grid {
+      grid-template-columns: 1fr; 
+
+      }
+
+    }
+
+    @media (max-width: 480px) {
+      .home__title {
+          font-size: 24px; 
+      }
+    }
 a{ 
   text-decoration: none;
   color:inherit;
