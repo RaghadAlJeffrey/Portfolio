@@ -211,8 +211,9 @@ a:hover {
 /* Services Section */
 .skills__container, .services__container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .skills__content, .services__content {
