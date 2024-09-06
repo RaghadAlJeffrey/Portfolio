@@ -214,6 +214,8 @@ a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2rem;
+  justify-content: center;
+  align-items: flex-start; 
 }
 
 .skills__content, .services__content {
@@ -223,8 +225,10 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 30%;
+  min-width: 250px; 
   text-align: center;
 }
+
 
 .skills__icon, .service__icon {
   font-size: 2.5rem;
@@ -235,12 +239,27 @@ a:hover {
 .skills__title, .services__title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-weight: bold; 
 }
 
 .skills__description, .services__description {
   font-size: 1rem;
   color: #666;
+  line-height: 1.5;
 }
+
+@media screen and (max-width: 768px) {
+  .skills__content, .services__content {
+    width: 45%; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills__content, .services__content {
+    width: 100%; 
+  }
+}
+
 
 /* Contact Section */
 
