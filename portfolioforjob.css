@@ -56,11 +56,14 @@ a:hover {
   z-index: 1000;
 }
 
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .nav__toggle {
@@ -77,11 +80,13 @@ a:hover {
 
 .nav__menu {
   display: flex;
+  overflow-x: auto;
 }
 
 .nav__list {
   display: flex;
   list-style: none;
+  white-space: nowrap;
 }
 
 .nav__item {
@@ -97,6 +102,7 @@ a:hover {
 .nav__link.active {
   color: #e91e63;
 }
+
 
 /* Home Section */
 .home {
