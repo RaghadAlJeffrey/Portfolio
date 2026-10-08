@@ -1,6 +1,4 @@
-/* =========================================
-   RESET
-   ========================================= */
+
 
 * {
     margin: 0;
@@ -87,33 +85,38 @@ a {
 .l-header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+
     z-index: 1000;
 }
 
 .nav {
     min-height: 70px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 1rem 2rem;
 }
 
 .nav__logo {
     font-size: 1.5rem;
     font-weight: bold;
+
     color: #333;
+
     font-family: 'Dancing Script', cursive;
+
     white-space: nowrap;
 }
 
 .nav__toggle {
     display: none;
-    font-size: 1.7rem;
-    cursor: pointer;
 }
 
 .nav__close {
@@ -127,8 +130,9 @@ a {
 
 .nav__list {
     display: flex;
-    list-style: none;
     align-items: center;
+
+    list-style: none;
 }
 
 .nav__item {
@@ -152,8 +156,11 @@ a {
 
 .home {
     background-color: #fff;
+
     padding: 5rem 0;
+
     text-align: center;
+
     margin-top: 70px;
 }
 
@@ -175,14 +182,19 @@ a {
 .home__img img {
     width: 250px;
     height: 200px;
+
     object-fit: cover;
+
     border-radius: 50%;
+
     margin: 0 auto 1rem;
 }
 
 .home__subtitle {
     font-family: 'Dancing Script', cursive;
+
     text-align: center;
+
     font-size: 1.4rem;
 }
 
@@ -193,10 +205,15 @@ a {
 
 .home__profession {
     display: block;
+
     max-width: 900px;
+
     margin: 0 auto 1.5rem;
+
     font-size: 1.2rem;
+
     color: #666;
+
     line-height: 1.7;
 }
 
@@ -206,8 +223,11 @@ a {
 
 .home__social-link {
     font-size: 1.5rem;
+
     color: #333;
+
     margin: 0 0.5rem;
+
     transition: color 0.3s;
 }
 
@@ -217,12 +237,19 @@ a {
 
 .button {
     display: inline-block;
+
     padding: 0.8rem 2rem;
+
     background-color: #e91e63;
+
     color: #fff;
+
     border: none;
+
     border-radius: 25px;
+
     cursor: pointer;
+
     transition: background-color 0.3s;
 }
 
@@ -238,6 +265,7 @@ a {
 
 .about__container {
     display: flex;
+
     justify-content: center;
     align-items: center;
 }
@@ -249,15 +277,20 @@ a {
 
 .about__description {
     font-size: 1rem;
+
     color: #666;
+
     line-height: 1.8;
+
     margin-bottom: 1.5rem;
+
     text-align: left;
 }
 
 .about__img {
     width: 300px;
     height: auto;
+
     border-radius: 10px;
 }
 
@@ -265,34 +298,51 @@ a {
 /* =========================================
    EDUCATION
    ========================================= */
+
 .education__container {
     width: 90%;
     max-width: 1000px;
+
     margin: 0 auto;
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
 }
 
 .education__content {
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
+
     background-color: #fff;
+
     padding: 2rem;
+
+    margin-bottom: 2rem;
+
     border-radius: 10px;
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+
+    text-align: left;
 }
 
 .education__year {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+
+    line-height: 1.6;
+
+    margin-bottom: 1.2rem;
 }
 
 .education__university {
     display: block;
+
     color: #666;
+
     line-height: 1.7;
+
     margin-bottom: 2rem;
 }
 
@@ -304,21 +354,29 @@ a {
 .experience__container {
     width: 90%;
     max-width: 1000px;
+
     margin: 0 auto;
 }
 
 .experience__content {
     background-color: #fff;
+
     padding: 2rem;
+
     margin-bottom: 2rem;
+
     border-radius: 10px;
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     text-align: left;
 }
 
 .experience__year {
     font-size: 1.15rem;
+
     line-height: 1.6;
+
     margin-bottom: 1.2rem;
 }
 
@@ -328,12 +386,15 @@ a {
 
 .experience__university p {
     color: #666;
+
     line-height: 1.7;
+
     margin-bottom: 1rem;
 }
 
 .experience__university i {
     color: #e91e63;
+
     margin-right: 0.4rem;
 }
 
@@ -344,33 +405,48 @@ a {
 
 .skills__container {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 2rem;
+
     justify-content: center;
+
     align-items: stretch;
 }
 
 .skills__content {
     background-color: #fff;
+
     padding: 2rem;
+
     border-radius: 10px;
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     width: 28%;
+
     min-width: 250px;
+
     text-align: center;
 }
 
 .skills__icon,
 .service__icon {
     font-size: 2.5rem;
+
     color: #e91e63;
+
     margin-bottom: 1rem;
 }
 
 .skills__title {
     font-size: 1.3rem;
+
     margin-bottom: 1rem;
+
     font-weight: bold;
+
     line-height: 1.5;
 }
 
@@ -381,31 +457,45 @@ a {
 
 .services__container {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 2rem;
+
     justify-content: center;
+
     align-items: stretch;
 }
 
 .services__content {
     background-color: #fff;
+
     padding: 2rem;
+
     border-radius: 10px;
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     width: 28%;
+
     min-width: 250px;
+
     text-align: center;
 }
 
 .services__title {
     font-size: 1.5rem;
+
     margin-bottom: 1rem;
+
     font-weight: bold;
 }
 
 .services__description {
     font-size: 1rem;
+
     color: #666;
+
     line-height: 1.7;
 }
 
@@ -417,21 +507,33 @@ a {
 .works__container {
     width: 90%;
     max-width: 1200px;
+
     margin: 0 auto;
+
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 2rem;
+
     justify-content: center;
+
     align-items: stretch;
 }
 
 .works__img {
     flex: 1 1 calc(33.333% - 2rem);
+
     min-width: 280px;
+
     text-align: center;
+
     padding: 1.5rem;
+
     background: #fff;
+
     border-radius: 10px;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -439,9 +541,13 @@ a {
 .Theaterpic,
 .closing-speech {
     max-width: 100%;
+
     width: 100%;
+
     height: auto;
+
     object-fit: contain;
+
     margin: 0 auto;
 }
 
@@ -451,6 +557,7 @@ a {
 
 .works__data p {
     color: #666;
+
     line-height: 1.7;
 }
 
@@ -466,33 +573,45 @@ a {
 .contact-section {
     width: 90%;
     max-width: 800px;
+
     margin: 3rem auto;
+
     text-align: center;
+
     padding: 2rem;
+
     background: #fff;
+
     border-radius: 10px;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact__title {
     font-size: 2rem;
+
     margin-bottom: 2rem;
 }
 
 .contact__info {
     text-align: center;
+
     margin-bottom: 1.5rem;
 }
 
 .contact__subtitle {
     font-size: 1.2rem;
+
     margin-bottom: 0.5rem;
 }
 
 .contact__text {
     display: block;
+
     font-size: 1rem;
+
     color: #666;
+
     overflow-wrap: anywhere;
 }
 
@@ -503,20 +622,27 @@ a {
 
 .footer {
     background-color: #333;
+
     color: #fff;
+
     padding: 2rem 0;
+
     text-align: center;
 }
 
 .footer__container {
     width: 90%;
+
     max-width: 900px;
+
     margin: 0 auto;
 }
 
 .footer__title {
     font-family: 'Dancing Script', cursive;
+
     font-size: 2rem;
+
     margin-bottom: 1rem;
 }
 
@@ -530,8 +656,11 @@ a {
 
 .footer__link {
     font-size: 1.5rem;
+
     color: #fff;
+
     margin: 0 0.5rem;
+
     transition: color 0.3s;
 }
 
@@ -541,14 +670,12 @@ a {
 
 .footer-copy {
     font-size: 0.9rem;
+
     color: #ccc;
+
     margin-top: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-and the navigation rules inside it, particularly .nav__toggle, .nav__menu, .nav__menu.show, .nav__close, etc.
-
-Use these:
 
 /* =========================================
    MOBILE NAVIGATION
@@ -556,25 +683,41 @@ Use these:
 
 @media screen and (max-width: 768px) {
 
+    /* -----------------------------------------
+       NAVIGATION
+       ----------------------------------------- */
+
     .nav {
         position: relative;
+
         width: 100%;
+
         min-height: 60px;
+
         padding: 0.8rem 1rem;
+
         display: flex;
+
         align-items: center;
+
         justify-content: space-between;
     }
 
-    /* Hamburger button */
+    /* Hamburger */
 
     .nav__toggle {
         display: flex;
+
         align-items: center;
+
         justify-content: center;
+
         font-size: 1.8rem;
+
         cursor: pointer;
+
         color: #333;
+
         z-index: 1200;
     }
 
@@ -582,6 +725,11 @@ Use these:
         pointer-events: none;
     }
 
+    /* Logo */
+
+    .nav__logo {
+        font-size: 1.3rem;
+    }
 
     /* Mobile menu */
 
@@ -589,10 +737,13 @@ Use these:
         position: fixed;
 
         top: 0;
+
         right: -100%;
 
         width: 80%;
+
         max-width: 320px;
+
         height: 100vh;
 
         background-color: #fff;
@@ -610,15 +761,13 @@ Use these:
         transition: right 0.3s ease;
     }
 
-
-    /* THIS OPENS THE MENU */
+    /* Open menu */
 
     .nav__menu.show {
         right: 0;
     }
 
-
-    /* Close X */
+    /* Close button */
 
     .nav__close {
         display: flex;
@@ -626,12 +775,15 @@ Use these:
         position: absolute;
 
         top: 1rem;
+
         right: 1.2rem;
 
         width: 40px;
+
         height: 40px;
 
         align-items: center;
+
         justify-content: center;
 
         font-size: 2rem;
@@ -647,7 +799,6 @@ Use these:
         pointer-events: none;
     }
 
-
     /* Menu list */
 
     .nav__list {
@@ -662,17 +813,17 @@ Use these:
         gap: 1.2rem;
 
         padding: 0;
+
         margin: 0;
 
         list-style: none;
     }
 
-
     .nav__item {
         width: 100%;
+
         margin: 0;
     }
-
 
     .nav__link {
         display: block;
@@ -689,22 +840,278 @@ Use these:
     }
 
 
-    .nav__link:hover,
-    .nav__link.active {
-        color: #e91e63;
+    /* -----------------------------------------
+       GENERAL MOBILE
+       ----------------------------------------- */
+
+    .bd-grid {
+        width: calc(100% - 2rem);
     }
 
-@media screen and (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+
+
+    /* -----------------------------------------
+       HOME
+       ----------------------------------------- */
+
+    .home {
+        margin-top: 60px;
+
+        padding: 4rem 0 3rem;
+    }
+
+    .home__img img {
+        width: 200px;
+
+        height: 170px;
+    }
+
+    .home__title {
+        font-size: 2rem;
+
+        line-height: 1.3;
+    }
+
+    .home__subtitle {
+        font-size: 1.3rem;
+    }
+
+    .home__profession {
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------
+       ABOUT
+       ----------------------------------------- */
+
+    .about__container {
+        width: calc(100% - 2rem);
+    }
+
+    .about__data {
+        width: 100%;
+    }
+
+    .about__description {
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
+
+
+    /* -----------------------------------------
+       EDUCATION
+       ----------------------------------------- */
 
     .education__container {
         width: calc(100% - 2rem);
+
         margin: 0 auto;
     }
 
     .education__content {
         width: 100%;
-        margin: 0 auto;
+
+        padding: 1.5rem;
+
+        margin: 0 auto 1.5rem;
+
         text-align: left;
+    }
+
+    .education__year {
+        font-size: 1rem;
+
+        line-height: 1.6;
+    }
+
+    .education__university {
+        font-size: 0.95rem;
+
+        line-height: 1.6;
+    }
+
+
+    /* -----------------------------------------
+       EXPERIENCE
+       ----------------------------------------- */
+
+    .experience__container {
+        width: calc(100% - 2rem);
+    }
+
+    .experience__content {
+        padding: 1.5rem;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .experience__year {
+        font-size: 1rem;
+
+        line-height: 1.6;
+    }
+
+    .experience__university p {
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------
+       SKILLS
+       ----------------------------------------- */
+
+    .skills__container {
+        width: calc(100% - 2rem);
+
+        gap: 1rem;
+    }
+
+    .skills__content {
+        width: 100%;
+
+        min-width: 0;
+
+        padding: 1.5rem;
+    }
+
+
+    /* -----------------------------------------
+       SERVICES
+       ----------------------------------------- */
+
+    .services__container {
+        width: calc(100% - 2rem);
+
+        gap: 1rem;
+    }
+
+    .services__content {
+        width: 100%;
+
+        min-width: 0;
+
+        padding: 1.5rem;
+    }
+
+    .services__title {
+        font-size: 1.3rem;
+    }
+
+
+    /* -----------------------------------------
+       PORTFOLIO
+       ----------------------------------------- */
+
+    .works__container {
+        width: calc(100% - 2rem);
+
+        gap: 1.5rem;
+    }
+
+    .works__img {
+        flex: 1 1 100%;
+
+        min-width: 0;
+
+        width: 100%;
+
+        padding: 1.25rem;
+    }
+
+    .works__data p {
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+
+
+    .contact-section {
+        width: calc(100% - 2rem);
+
+        padding: 1.5rem;
+
+        margin: 2rem auto;
+    }
+
+    .contact__title {
+        font-size: 1.7rem;
+    }
+
+    .contact__subtitle {
+        font-size: 1.1rem;
+    }
+
+
+    /* -----------------------------------------
+       FOOTER
+       ----------------------------------------- */
+
+    .footer__container {
+        width: calc(100% - 2rem);
+    }
+
+    .footer-description {
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   ========================================= */
+
+@media screen and (max-width: 400px) {
+
+    .nav__logo {
+        font-size: 1.15rem;
+    }
+
+    .nav__menu {
+        width: 85%;
+    }
+
+    .home__title {
+        font-size: 1.8rem;
+    }
+
+    .home__img img {
+        width: 180px;
+
+        height: 155px;
+    }
+
+    .education__content,
+    .experience__content,
+    .services__content,
+    .skills__content {
+        padding: 1.25rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
     }
 
 }
