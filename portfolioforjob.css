@@ -277,7 +277,7 @@ a {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
 }
 
 .education__year {
@@ -690,32 +690,6 @@ Use these:
     .nav__link.active {
         color: #e91e63;
     }
-    .
-/* =========================================
-   EDUCATION ALIGNMENT FIX
-   ========================================= */
-
-.education {
-    text-align: center;
-}
-
-.education__container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.education__content {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.education__year,
-.education__university {
-    text-align: left;
-}
 
 @media screen and (max-width: 768px) {
 
