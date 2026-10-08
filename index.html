@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghad Al-Jeffrey portfolio</title>
@@ -12,39 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
-    </head>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-        const navMenu = document.getElementById('nav-menu');
-        const navToggle = document.getElementById('nav-toggle');
-        const navClose = document.getElementById('nav-close');
-        const navLinks = document.querySelectorAll('.nav__link');
-
-
-        // Open menu
-        navToggle.addEventListener('click', function () {
-            navMenu.classList.add('show');
-        });
-
-
-        // Close menu
-        navClose.addEventListener('click', function () {
-            navMenu.classList.remove('show');
-        });
-
-
-        // Close menu when clicking a link
-        navLinks.forEach(function (link) {
-
-            link.addEventListener('click', function () {
-                navMenu.classList.remove('show');
-            });
-
-        });
-
-    });
-</script>
+</head>
 <body>
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -417,4 +385,36 @@ I like writing fiction & prose, playing piano & video games, solving problems, i
     </footer>
     <!------------------------ Footer ends----------------------->
 </body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const navMenu = document.getElementById('nav-menu');
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+
+        // Open menu
+        navToggle.addEventListener('click', function () {
+            navMenu.classList.add('show');
+        });
+
+
+        // Close menu
+        navClose.addEventListener('click', function () {
+            navMenu.classList.remove('show');
+        });
+
+
+        // Close menu when clicking a link
+        navLinks.forEach(function (link) {
+
+            link.addEventListener('click', function () {
+                navMenu.classList.remove('show');
+            });
+
+        });
+
+    });
+</script>
 </html>
