@@ -542,103 +542,154 @@ a {
     margin-top: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+and the navigation rules inside it, particularly .nav__toggle, .nav__menu, .nav__menu.show, .nav__close, etc.
+
+Use these:
 
 /* =========================================
-   TABLET
-   ========================================= */
-
-@media screen and (max-width: 900px) {
-
-    .nav__item {
-        margin-left: 1rem;
-    }
-
-    .nav__link {
-        font-size: 0.9rem;
-    }
-
-    .about__data {
-        width: 85%;
-    }
-
-    .skills__content,
-    .services__content {
-        width: 40%;
-    }
-
-    .works__img {
-        flex: 1 1 calc(50% - 2rem);
-    }
-}
-
-
-/* =========================================
-   MOBILE
+   MOBILE NAVIGATION
    ========================================= */
 
 @media screen and (max-width: 768px) {
 
-    .bd-grid {
-        width: calc(100% - 2rem);
-    }
-
-
-    /* ---------- MOBILE NAV ---------- */
-
     .nav {
+        position: relative;
+        width: 100%;
         min-height: 60px;
         padding: 0.8rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+
+    /* Hamburger button */
 
     .nav__toggle {
-        display: block;
-        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #333;
+        z-index: 1200;
     }
 
-    .nav > div:nth-child(2) {
-        order: 2;
+    .nav__toggle i {
+        pointer-events: none;
     }
 
-    .nav__logo {
-        font-size: 1.25rem;
-    }
+
+    /* Mobile menu */
 
     .nav__menu {
         position: fixed;
+
         top: 0;
         right: -100%;
+
         width: 80%;
         max-width: 320px;
         height: 100vh;
+
         background-color: #fff;
+
         padding: 5rem 2rem 2rem;
-        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+
         display: block;
-        transition: right 0.3s ease;
+
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+
         overflow-y: auto;
+
         z-index: 1100;
+
+        transition: right 0.3s ease;
     }
+
+
+    /* THIS OPENS THE MENU */
 
     .nav__menu.show {
         right: 0;
     }
 
+
+    /* Close X */
+
     .nav__close {
-        display: block;
+        display: flex;
+
         position: absolute;
+
         top: 1rem;
         right: 1.2rem;
+
+        width: 40px;
+        height: 40px;
+
+        align-items: center;
+        justify-content: center;
+
         font-size: 2rem;
+
         cursor: pointer;
+
+        color: #333;
+
+        z-index: 1200;
     }
+
+    .nav__close i {
+        pointer-events: none;
+    }
+
+
+    /* Menu list */
 
     .nav__list {
         display: flex;
+
         flex-direction: column;
+
         align-items: flex-start;
-        gap: 1.4rem;
+
+        width: 100%;
+
+        gap: 1.2rem;
+
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
     }
 
+
+    .nav__item {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .nav__link {
+        display: block;
+
+        width: 100%;
+
+        padding: 0.5rem 0;
+
+        font-size: 1rem;
+
+        color: #333;
+
+        cursor: pointer;
+    }
+
+
+    .nav__link:hover,
+    .nav__link.active {
+        color: #e91e63;
+    }
     .
 /* =========================================
    EDUCATION ALIGNMENT FIX
