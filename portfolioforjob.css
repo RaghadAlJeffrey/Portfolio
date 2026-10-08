@@ -640,3 +640,43 @@ a {
     }
 
     .
+/* =========================================
+   EDUCATION ALIGNMENT FIX
+   ========================================= */
+
+.education {
+    text-align: center;
+}
+
+.education__container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.education__content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.education__year,
+.education__university {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+
+    .education__container {
+        width: calc(100% - 2rem);
+        margin: 0 auto;
+    }
+
+    .education__content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+}
