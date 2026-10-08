@@ -13,7 +13,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
 
+        const navMenu = document.getElementById('nav-menu');
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+
+        // Open menu
+        navToggle.addEventListener('click', function () {
+            navMenu.classList.add('show');
+        });
+
+
+        // Close menu
+        navClose.addEventListener('click', function () {
+            navMenu.classList.remove('show');
+        });
+
+
+        // Close menu when clicking a link
+        navLinks.forEach(function (link) {
+
+            link.addEventListener('click', function () {
+                navMenu.classList.remove('show');
+            });
+
+        });
+
+    });
+</script>
 <body>
     <header class="l-header">
         <nav class="nav bd-grid">
